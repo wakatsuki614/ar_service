@@ -1,0 +1,109 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.bgi {
+  background-image: url(https://presite-potepancamp-rails-02.herokuapp.com/assets/img_cover_top.jpg);
+  height: 650px;
+  background-size: cover;
+  padding: 0 95px;
+  width: 100%;
+}
+.c-white {
+  color: white;
+  text-decoration: none;
+}
+.c-white:hover {
+  color: white;
+}
+.nli-m {
+  margin: 0 16px;
+}
+.form-fream {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+.bgc-white {
+  background-color: white;
+  padding: 24px;
+  border-radius: 5px;
+}
+.form-area-title {
+  font-size: 28px;
+  line-height: 33px;
+  letter-spacing: 1px;
+}
+.index-mb {
+  margin-bottom: 8px;
+}
+.section-title {
+  font-size: 24px;
+  margin: 35px 65px;
+  font-weight: bold;
+}
+.panel-image {
+  height: 360px;
+  width: 231px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.index-f {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 52px;
+}
+.wrap {
+  overflow: hidden;
+}
+.panel-item {
+  padding: 0 15px;
+  position:relative;
+}
+.area {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-weight: bold;
+  z-index: 1;
+  margin: auto;
+  text-align: center;
+  font-size: 24px;
+}
+.edit-b {
+  border-bottom: 2px solid #dee2e6;
+}
+.panel-title {
+  margin: 6px 8px!important;
+}
+.edit-mt {
+  margin-top: 50px;
+}
+.edit-br {
+  border-radius: 6px;
+}
+.edit-w {
+  width: 100%;
+  font-size: 0.8rem;
+}
+.cccccc {
+  background-color: #CCCCCC;
+}
+.device_frame {
+  max-width: 600px;
+  padding: 24px;
+  margin: 36px auto 0;
+  background-color: white;
+  border-radius: 4px;
+}
+.unew-ta-center {
+  text-align: center;
+}
+.device_frame a {
+  color: #007bff;
+  text-decoration: none;
+}

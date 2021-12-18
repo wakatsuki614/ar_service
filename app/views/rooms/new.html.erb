@@ -1,0 +1,32 @@
+<div class="row p-4 device_frame border">
+  <div>
+    <h1 class="mb-3">ルーム情報登録</h1>
+    <%= form_for(@room) do |f| %>
+      <div class="form-group me-3 mb-3">
+        <%= f.label :name, 'ルーム名' %>
+        <%= f.text_field :name, placeholder: "ルーム名を入力", class: 'form-control' %>
+      </div>
+      <div class="form-group me-3 mb-3">
+        <%= f.label :room_introduce, 'ルーム紹介' %>
+        <%= f.text_area :room_introduce, :size => "80x5", placeholder: "ルーム説明を入力", class: 'form-control' %>
+      </div>
+      <div class="form-group me-3 mb-3">
+        <%= f.label :price, '料金' %>
+        <%= f.number_field :price, placeholder: "一日あたりの料金を入力", class: 'form-control' %>
+      </div>
+      <div class="form-group me-3 mb-3">
+        <%= f.label :address, '住所' %>
+        <%= f.text_field :address, placeholder: "住所を入力", class: 'form-control' %>
+      </div>
+      <div class="form-group me-3 mb-3">
+        <%= f.label :room_image, 'ルーム画像' %><br>
+        <%= f.file_field :room_image %>
+      </div>
+      <div class="al-c">
+        <%= f.submit '登録', class: 'btn btn-primary btn-block my-3 form-control' %>
+      </div>
+
+      <%= f.hidden_field :user_id, value: current_user.id %>
+    <% end %>
+  </div>
+</div>
