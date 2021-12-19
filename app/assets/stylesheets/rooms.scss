@@ -1,0 +1,106 @@
+// Place all the styles related to the rooms controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.room-posts {
+  padding: 30px 170px;
+}
+.room-posts table thead tr {
+  border-top: 1px solid #eaedef;
+  border-bottom: 1px solid #eaedef;
+  text-align: center;
+}
+.room-posts table thead tr th {
+  padding: 8px 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.room-posts table tbody tr td {
+  padding: 10px;
+  background: #eee;
+}
+.room-posts table tbody tr:nth-child(odd) td {
+  background: #fff;
+}
+.posts-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.rindex-f {
+  font-size: 14px;
+  line-height: 18px;
+}
+.posts-content {
+  font-size: 14px;
+  line-height: 18px;
+  max-width: 400px;
+}
+.container {
+  padding: 30px;
+  margin: 0 auto;
+}
+.room-show-detile {
+  display: flex;
+  align-items: center;
+}
+.room-show-detile-icon {
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+.room-show-profile {
+  padding: 15px;
+}
+.room-show-profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0;
+}
+.room-show-profile-address {
+  font-size: 14px;
+}
+.room-show-profie-introduce {
+  border-top: 1px solid #eaedef;
+  border-bottom: 1px solid #eaedef;
+  line-height: 30px;
+  padding: 30px 10px;
+}
+.room-show-profile-image {
+  width: 100%;
+}
+.room-show-nav {
+  padding: 20px;
+  margin: 0 0 auto;
+}
+.field {
+  font-size: 1.25rem;
+}
+.search-result {
+  padding: 0 15px;
+  margin: 0 0;
+  box-sizing: border-box;
+}
+.room-image {
+  width: 100%;
+  height: 180px;
+  margin-top: 20px;
+  object-fit: cover;
+}
+.room-profile {
+  width: 100%;
+  padding: 15px;
+}
+.room-profile-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #909090;
+}
+.room-profile-city {
+  font-size: 16px;
+  font-weight: bold;
+}
+.room-profile-icon {
+  text-align: right;
+  font-size: 16px;
+  letter-spacing: 1px;
+}

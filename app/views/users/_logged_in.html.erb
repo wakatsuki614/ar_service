@@ -1,0 +1,23 @@
+<div class="ms-auto p-2 bd-highlight d-flex align-items-center">
+  <%= current_user.nickname %>
+  <div class="dropdownmp">
+    <button class="dropdown__btn" id="dropdown__btn">
+      <% if current_user.image? %>
+        <%= image_tag current_user.image.url, :size => "65x65", class: "host-icon" %>
+      <% else %>
+        <%= image_tag("https://presite-potepancamp-rails-02.herokuapp.com/assets/default_icon-9263fc59c414b7228d256fc178dcb22183561357950a68f5ad086ba7ee054974.jpg", :size => "65x65", class: "host-icon") %>
+      <% end %>
+    </button>
+    <div class="dropdown__body">
+      <ul class="dropdown__list">
+        <li class="dropdown__item"><%= link_to 'ルーム登録', new_room_path, class: "dropdown__item-link" %></li>
+        <li class="dropdown__item"><%= link_to '予約済みルーム一覧', reservations_path, class: "dropdown__item-link" %></li>
+        <li class="dropdown__item"><%= link_to '登録済みルーム一覧', rooms_path, class: "dropdown__item-link" %></li>
+        <li class="dropdown__item"><%= link_to '設定', edit_user_path(current_user), class: "dropdown__item-link" %></li>
+        <li class="dropdown__item"><%= link_to "ログアウト", logout_path, method: :delete, class: "dropdown__item-link" %></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<%= javascript_pack_tag 'user/logged_in' %>

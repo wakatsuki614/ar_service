@@ -1,0 +1,27 @@
+<div class="device_frame border">
+  <h1 class="mb-3">新しいアカウントを作成</h1>
+  <%= form_for(@user) do |f| %>
+    <div class="form-group mb-3">
+      <%= f.label :nickname, 'ニックネーム' %>
+      <%= f.text_field :nickname, class: 'form-control' %>
+    </div>
+    <div class="form-group mb-3">
+      <%= f.label :email, 'メールアドレス' %>
+      <%= f.email_field :email, class: 'form-control' %>
+    </div>
+    <div class="form-group mb-3">
+      <%= f.label :password, 'パスワード' %>
+      <%= f.password_field :password, class: 'form-control' %>
+    </div>
+    <div class="form-group mb-3">
+      <%= f.label :password_confirmation, 'パスワード（もう１度ご入力ください）' %>
+      <%= f.password_field :password_confirmation, class: 'form-control' %>
+    </div>
+    <div class="unew-ta-center">
+      <%= f.submit '登録する', class: 'btn btn-primary btn-block my-3 form-control' %>
+    </div>
+  <% end %>
+  <div class="text-center">
+    <a href="/login">すでにアカウントをお持ちの方はログイン</a>
+  </div>
+</div>

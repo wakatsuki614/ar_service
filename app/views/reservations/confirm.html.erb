@@ -1,0 +1,31 @@
+<div class="device_frame confirm">
+  <h1>予約フォーム</h1>
+  <ol class="nav my-4">
+    <li class="current">1.確認</li>
+    <li>2.完了</li>
+  </ol>
+  <dl>
+	<div class="mt-5 mb-3 confirm-date">
+      <dt>開始日</dt>
+      <dd><%= @reservation.start_date %></dd>
+    </div>
+	<div class="mb-3 confirm-date">
+	  <dt>終了日</dt>
+      <dd><%= @reservation.end_date %></dd>
+    </div>
+	<div class="mb-3 confirm-date">
+	  <dt>人数</dt>
+      <dd><%= @reservation.person_num %>人</dd>
+    </div>
+	<div class="mb-5 confirm-date">
+	  <dt>合計金額</dt>
+      <dd>¥<%= (@reservation.end_date - @reservation.start_date).to_i * @reservation.room.price.to_i * @reservation.person_num %></dd>
+    </div>
+  </dl>
+  <div class="text-center">
+    <%= link_to "入力画面に戻る", @reservation.room, class: 'btn btn-block confirm-btn confirm-width mb-3' %>
+    <%= form_for @reservation, method: :post, url: reservations_complete_path do |form| %>
+      <%= form.submit '送信する', class: 'btn btn-block confirm-btn confirm-width' %>
+    <% end %>
+  </div>
+</div>

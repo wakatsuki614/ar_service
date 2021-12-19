@@ -10,6 +10,88 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
+ *= require_tree
  */
+
+  .bgc-black {
+    background-color: black;
+    color: white;
+  }
+  .dropdownmp {
+    margin: 0 0 0 auto;
+    position: relative;
+  }
+  .dropdown__btn {
+    display: block;
+    padding: 4px;
+    background: none;
+    border: 0;
+    margin: 0 16px;
+  }
+  .dropdown__btn.is-open::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+  .dropdown__btn.is-open + .dropdown__body {
+    display: inline-block;
+    z-index: 5;
+  }
+  .dropdown__body {
+    display: none;
+    background: #fff;
+    box-shadow: 0 2px 6px 2px rgba(60,64,67,0.149), 0 1px 2px 0 rgba(60,64,67,0.302);
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    top: 90px;
+    left: -80px;
+  }
+  .dropdown__list {
+    margin: 0;
+    padding: 15px;
+    line-height: 30px;
+  }
+  .dropdown__item {
+    display: block;
+  }
+  .dropdown__item-link {
+    font-size: 0.95em;
+    text-decoration: none;
+    color: #444;
+  }
+  .host-icon {
+    border-radius: 50px;
+  }
+  .dropdown__btn:focus {
+    outline: 0;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 180px;
+    margin-top: 64px;
+    padding-top: 90px;
+    background-color: #111;
+    box-sizing: border-box;
+    color: #fff;
+    text-align: center;
+  }
+  .index-h {
+    padding: 6px;
+  }
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    margin-bottom: 180px;
+    padding-bottom: 0;
+  }
